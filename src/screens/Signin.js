@@ -29,7 +29,7 @@ function Signin() {
     e.preventDefault();
     try {
       dispatch({ type: "FETCH_REQUEST" });
-      const { data } = await Axios.post("https://wild-cyan-wildebeest-boot.cyclic.app/user/sign-in", {
+      const { data } = await Axios.post("https://ghi-q4ec.onrender.com/user/sign-in", {
         email,
         password: pass,
       },{ withCredentials: true }); 
