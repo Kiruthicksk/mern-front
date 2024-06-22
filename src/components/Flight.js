@@ -32,7 +32,7 @@ function Flight() {
   const fetchFlights = async () => {
     try {
       dispatch({ type: "FETCH_REQUEST" });
-      const { data } = await Axios.get("https://wild-cyan-wildebeest-boot.cyclic.app/airline/fetch");
+      const { data } = await Axios.get("https://ghi-q4ec.onrender.com/airline/fetch");
       localStorage.setItem("flights", JSON.stringify(data));
       ctxDispatch({ type: "ADD_FLIGHTS", payload: data });
       dispatch({ type: "FETCH_SUCCESS" });
@@ -53,7 +53,7 @@ function Flight() {
         toast.error("Please fill in all required fields.");
         return;
       }
-    const { data } = await Axios.put("https://wild-cyan-wildebeest-boot.cyclic.app/airline/add", {
+    const { data } = await Axios.put("https://ghi-q4ec.onrender.com/airline/add", {
         flightId: id,
         name,
         location: loc,
