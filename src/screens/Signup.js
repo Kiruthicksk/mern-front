@@ -41,7 +41,7 @@ function Signup() {
         try {
           dispatch({ type: "FETCH_REQUEST" });
           const { data } = await Axios.post(
-            "https://wild-cyan-wildebeest-boot.cyclic.app/user/sign-up",
+            "https://ghi-q4ec.onrender.com/user/sign-up",
             {
               name,
               email,
